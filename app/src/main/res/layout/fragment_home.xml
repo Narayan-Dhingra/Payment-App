@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="381dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="39dp"
+            android:layout_height="41dp"
+            app:srcCompat="@drawable/wallet_icon"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/wallet_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:text="Wallet Balance: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:text="₹ 5000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="103dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="262dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/transparent_btn_bg"
+            android:text="Add Money"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/recharges_bill_payments"
+            android:textColor="#2E2E2E"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ibPhone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_background_icon"
+            android:onClick="rechargeMobile"
+            app:srcCompat="@drawable/phone_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="100dp"
+            android:text="Mobile" />
+
+        <ImageButton
+            android:id="@+id/ibElectricity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/electricity_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="100dp"
+            android:text="Electricity" />
+
+        <ImageButton
+            android:id="@+id/ibLandline"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/telephone_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="100dp"
+            android:text="Telephone" />
+
+        <ImageButton
+            android:id="@+id/ibMore"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/more_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="100dp"
+            android:text="More" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Book on Payment App"
+            android:textColor="#2E2E2E"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ibMovies"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/movie_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="225dp"
+            android:text="Movies" />
+
+        <ImageButton
+            android:id="@+id/ibFlights"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/flights_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="225dp"
+            android:text="Flights" />
+
+        <ImageButton
+            android:id="@+id/ibTrain"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/train_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="225dp"
+            android:text="Trains" />
+
+        <ImageButton
+            android:id="@+id/ibMore2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/round_background_icon"
+            app:srcCompat="@drawable/more_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="225dp"
+            android:text="More" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="379dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

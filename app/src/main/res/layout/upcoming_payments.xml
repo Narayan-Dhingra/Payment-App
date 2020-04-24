@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/ivPayment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/phone_icon"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Bill"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5958488118"
+            android:textSize="14dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvDdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date:  28 july 2019"
+            android:textSize="12sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvPaynow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay now"
+            android:textSize="15sp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="300dp"
+            android:textColor="@color/design_default_color_primary"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
