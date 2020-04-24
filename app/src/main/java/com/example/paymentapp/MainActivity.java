@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity
 
         {
     public DrawerLayout drawer;
-    public RecyclerView recyclerView1;
-    public RecyclerView.Adapter adapter1;
-    public RecyclerView.LayoutManager layoutManager1;
+//    public RecyclerView recyclerView1;
+//    public RecyclerView.Adapter adapter1;
+//    public RecyclerView.LayoutManager layoutManager1;
 
 
 
@@ -48,15 +48,19 @@ public class MainActivity extends AppCompatActivity
 
         switch (menuItem.getItemId()) {
             case R.id.navHome:
+                bottomNav.setSelectedItemId(R.id.navHome);
                 selectedfragment = new HomeFragment();
                 break;
             case R.id.navOffers:
+                bottomNav.setSelectedItemId(R.id.navOffers);
                 selectedfragment = new OffersFragment();
                 break;
             case R.id.navPayment:
+                bottomNav.setSelectedItemId(R.id.navPayment);
                 selectedfragment = new PaymentsFragment();
                 break;
             case R.id.navHistory:
+                bottomNav.setSelectedItemId(R.id.navHistory);
                 selectedfragment = new HistoryFragment();
                 break;
 
@@ -67,13 +71,15 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+            BottomNavigationView bottomNav;
+            NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // bottom navigation
-        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
+        bottomNav = findViewById(R.id.bottomNavigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 //        bottomNav.setNavigationItemSelectedListener(this);
 //        bottomNav.OnNavigationItemReselectedListener(this);
@@ -82,7 +88,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_View);
+         navigationView = findViewById(R.id.nav_View);
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
@@ -93,23 +99,23 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_Container,
                 new HomeFragment()).commit();
 
-        ArrayList<PaymentUpcoming> paymentList = new ArrayList<>();
-        paymentList.add(new PaymentUpcoming(R.drawable.electricity_icon, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.phone_icon, "Phone Bill",
-                "88165445648", "Due Date:  11 june 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.telephone_icon, "Telephone Bill",
-                "82222222648", "Due Date:  25 august 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.train_icon, "Transport Bill",
-                "88111111648", "Due Date:  10 january 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.electricity_icon, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.phone_icon, "Phone Bill",
-                "88165445648", "Due Date:  11 june 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.telephone_icon, "Telephone Bill",
-                "82222222648", "Due Date:  25 august 2019", "Pay Now"));
-        paymentList.add(new PaymentUpcoming(R.drawable.train_icon, "Transport Bill",
-                "88111111648", "Due Date:  10 january 2019", "Pay Now"));
+//        ArrayList<PaymentUpcoming> paymentList = new ArrayList<>();
+//        paymentList.add(new PaymentUpcoming(R.drawable.electricity_icon, "Electricity Bill",
+//                "88161184648", "Due Date:  21 may 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.phone_icon, "Phone Bill",
+//                "88165445648", "Due Date:  11 june 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.telephone_icon, "Telephone Bill",
+//                "82222222648", "Due Date:  25 august 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.train_icon, "Transport Bill",
+//                "88111111648", "Due Date:  10 january 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.electricity_icon, "Electricity Bill",
+//                "88161184648", "Due Date:  21 may 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.phone_icon, "Phone Bill",
+//                "88165445648", "Due Date:  11 june 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.telephone_icon, "Telephone Bill",
+//                "82222222648", "Due Date:  25 august 2019", "Pay Now"));
+//        paymentList.add(new PaymentUpcoming(R.drawable.train_icon, "Transport Bill",
+//                "88111111648", "Due Date:  10 january 2019", "Pay Now"));
 
 
 //        recyclerView1 = findViewById(R.id.recyclerView);
@@ -133,15 +139,19 @@ public class MainActivity extends AppCompatActivity
 
                     switch (menuItem.getItemId()) {
                         case R.id.navHome:
+                            navigationView.setCheckedItem(R.id.navHome);
                             selectedFragment = new HomeFragment();
                             break;
                         case R.id.navOffers:
+                            navigationView.setCheckedItem(R.id.navOffers);
                             selectedFragment = new OffersFragment();
                             break;
                         case R.id.navPayment:
+                            navigationView.setCheckedItem(R.id.navPayment);
                             selectedFragment = new PaymentsFragment();
                             break;
                         case R.id.navHistory:
+                            navigationView.setCheckedItem(R.id.navHistory);
                             selectedFragment = new HistoryFragment();
                             break;
                     }
@@ -167,11 +177,22 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void rechargeMobile(View view) {
+
+
         // handle tap on mobile icon
         Intent intent = new Intent(this, RechargeMobile.class);
         startActivity(intent);
 
     }
+
+            public void rechargeDth(View view) {
+
+
+                // handle tap on mobile icon
+                Intent intent = new Intent(this, RechargeDTH.class);
+                startActivity(intent);
+
+            }
 
 
 

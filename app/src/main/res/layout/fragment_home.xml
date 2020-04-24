@@ -116,6 +116,7 @@
             android:text="Electricity" />
 
         <ImageButton
+            android:onClick="rechargeDth"
             android:id="@+id/ibLandline"
             android:layout_width="60dp"
             android:layout_height="60dp"

@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -24,29 +24,34 @@
             android:elevation="4dp"/>
 
         <FrameLayout
+
             android:id="@+id/fragment_Container"
             android:layout_width="match_parent"
-            android:layout_height="705dp">
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNavigation">
+
 
         </FrameLayout>
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
             android:background="?android:attr/windowBackground"
             app:itemTextColor="#000000"
             app:menu="@menu/bottom_navigation_menu" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:id="@+id/nav_View"
+        android:visibility="visible"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu"/>
 

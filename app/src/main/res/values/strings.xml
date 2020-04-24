@@ -10,4 +10,13 @@
         <item>Vodafone</item>
         <item>Idea</item>
     </string-array>
+
+    <string-array name="dth_operator">
+        <item>Dish Tv</item>
+        <item>Tata sky</item>
+        <item>Videocon D2H</item>
+        <item>Airtel DTH</item>
+    </string-array>
+
+
 </resources>
