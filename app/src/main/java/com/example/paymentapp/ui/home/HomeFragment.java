@@ -1,10 +1,12 @@
 package com.example.paymentapp.ui.home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,13 +25,17 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
+//    Button more;
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
 
 
     }
@@ -69,11 +75,25 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 
+//        Button more = more.findViewById();
+//        more.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(HomeFragment.this, Pop.class));
+//
+//            }
+//        });
+
 
         return rootview;
 
+//        popup menu
+
 
     }
+
+
+
 
     Context mContext;
 
@@ -82,5 +102,7 @@ public class HomeFragment extends Fragment {
         super.onAttach(context);
         this.mContext=context;
     }
+
+
 }
 
