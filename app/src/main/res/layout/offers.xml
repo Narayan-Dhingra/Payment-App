@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+    <ImageView
+        android:id="@+id/ivOffers"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/special_offer" />
+
+        <TextView
+            android:id="@+id/tvOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grab the amazing deals here"
+            android:textSize="24sp"
+            android:layout_marginTop="145dp"
+            android:gravity="center_horizontal"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
