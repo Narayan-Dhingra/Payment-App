@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/ivRPayment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/tvRName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dish TV"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvRNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5958488118"
+            android:textSize="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvRdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date:  28 july 2019"
+            android:textSize="12sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="85dp"/>
+
+        <TextView
+            android:id="@+id/tvSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success"
+            android:textSize="15sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="300dp"
+            android:textColor="@android:color/holo_green_light"/>
+
+        <TextView
+            android:id="@+id/tvRAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 2584"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="300dp"
+            android:textColor="#000000"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

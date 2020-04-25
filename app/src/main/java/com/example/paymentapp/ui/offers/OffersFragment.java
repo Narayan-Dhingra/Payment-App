@@ -23,16 +23,16 @@ import java.util.ArrayList;
 
 public class OffersFragment extends Fragment {
 
-    private RecyclerView recyclerView1;
-    private RecyclerView.Adapter adapter1;
-    private RecyclerView.LayoutManager layoutManager1;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
 
-        View rootView1 = inflater.inflate(R.layout.fragment_offers, container,false);
+        View rootView = inflater.inflate(R.layout.fragment_offers, container,false);
 
         ArrayList<CurrentOffers> offersList = new ArrayList<>();
 
@@ -46,16 +46,16 @@ public class OffersFragment extends Fragment {
         offersList.add(new CurrentOffers(R.drawable.special_offer, "Flipkart special cupon worth 5000"));
         offersList.add(new CurrentOffers(R.drawable.special_offer, "Flipkart special cupon worth 5000"));
 
-        recyclerView1 = rootView1.findViewById(R.id.recyclerView1);
-        recyclerView1.setHasFixedSize(true);
-        layoutManager1 = new LinearLayoutManager(oContext);
-        adapter1 = new OffersAdapter(offersList);
+        recyclerView = rootView.findViewById(R.id.recyclerView1);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(oContext);
+        adapter = new OffersAdapter(offersList);
 
-        recyclerView1.setLayoutManager(layoutManager1);
-        recyclerView1.setAdapter(adapter1);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
 
 
-        return rootView1;
+        return rootView;
     }
 
     Context oContext;

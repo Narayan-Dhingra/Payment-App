@@ -7,6 +7,7 @@
     tools:context=".RechargeMobile">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -48,13 +49,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:padding="12dp"
             android:layout_marginTop="150dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/spinner_shape"
-            android:inputType="numberSigned"
             android:hint="9868477745"
-            android:paddingStart="15dp"/>
+            android:inputType="numberSigned"
+            android:padding="12dp"
+            android:paddingStart="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,14 +68,14 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="245dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/spinner_shape"
-            android:inputType="numberSigned"
             android:hint="251"
-            android:paddingStart="15dp"/>/>
+            android:inputType="numberSigned"
+            android:padding="12dp"
+            android:paddingStart="15dp" />/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,14 +88,54 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="320dp"
-            android:layout_marginBottom="20dp"
-            android:text="Reacharge"
-            android:textSize="18sp"
-            android:background="@drawable/primary_button"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
             android:layout_marginRight="20dp"
-            android:textColor="#ffffff"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/primary_button"
+            android:text="Reacharge"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+
+        <TextView
+            android:id="@+id/rePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Recent Payments"
+            android:textColor="#2E2E2E"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_above="@+id/bottomNavigation"
+            android:layout_marginTop="30dp"
+
+            android:scrollbars="vertical" />
 
 
     </androidx.cardview.widget.CardView>
