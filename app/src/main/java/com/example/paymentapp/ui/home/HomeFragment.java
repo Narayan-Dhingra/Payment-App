@@ -1,10 +1,13 @@
 package com.example.paymentapp.ui.home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,11 +24,14 @@ import com.example.paymentapp.RV.PaymentUpcoming;
 import java.util.ArrayList;
 
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements View.OnClickListener{
+//
+    public ImageButton more;
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,7 +46,14 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
 
+//         Button more =  inflater.inflate(R.layout.fragment_home, container, false).findViewById(R.id.ibMore);
+//         more.setOnClickListener(this);
+
+
+
         View rootview = inflater.inflate(R.layout.fragment_home, container, false);
+        more = rootview.findViewById(R.id.ibMore);
+        more.setOnClickListener(this);
 
         ArrayList<PaymentUpcoming> paymentList = new ArrayList<>();
         paymentList.add(new PaymentUpcoming(R.drawable.electricity_icon, "Electricity Bill",
@@ -82,5 +95,17 @@ public class HomeFragment extends Fragment {
         super.onAttach(context);
         this.mContext=context;
     }
-}
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(mContext, Pop.class);
+        startActivity(intent);
+
+    }
+
+
+
+    }
+
+
 

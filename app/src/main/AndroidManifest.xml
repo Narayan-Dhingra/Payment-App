@@ -17,7 +17,8 @@
         <activity
             android:name=".RechargeMobile"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ui.home.Pop"/>
+        <activity android:name=".ui.home.Pop"
+            android:theme="@style/AppTheme.CustomTheme"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

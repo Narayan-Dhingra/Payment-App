@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 import com.example.paymentapp.R;
 
-class Pop extends Activity {
+public class Pop extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,6 +22,6 @@ class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int) (width*.6),(int) (height*.6));
+        getWindow().setLayout((int) (width*.8),(int) (height*.3));
     }
 }
