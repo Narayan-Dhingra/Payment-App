@@ -2,14 +2,66 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorbutton">
+    android:background="@android:color/transparent">
 
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/round_background_icon"
+        android:src="@drawable/gas_icon"
+        android:layout_marginTop="80dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pop up"
-        android:textSize="28sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:text="Gas"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="30dp"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/round_background_icon"
+        android:src="@drawable/water_icon"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="100dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/round_background_icon"
+        android:src="@drawable/wifi_icon"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="190dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:background="@drawable/round_background_icon"
+        android:src="@drawable/insurance_icon"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insurance"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="250dp"/>
+
 
 </RelativeLayout>
