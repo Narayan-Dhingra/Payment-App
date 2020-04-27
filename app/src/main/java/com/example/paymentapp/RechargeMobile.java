@@ -26,15 +26,25 @@ public class RechargeMobile extends AppCompatActivity {
 
         ArrayList<PaymentRecent> rpaymentList = new ArrayList<>();
         rpaymentList.add(new PaymentRecent(R.drawable.airtel, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "2254", "Success"));
+                "88161184648", "Date:  10 jan 2019", "Success", "₹ 2584"));
+        rpaymentList.add(new PaymentRecent(R.drawable.jio, "Electricity Bill",
+                "88161184648", "Date:  21 feb 2019", "Success", "₹ 200"));
+        rpaymentList.add(new PaymentRecent(R.drawable.sun_direct, "Electricity Bill",
+                "88161184648", "Date:  20 aug 2018", "Success", "₹ 4021"));
         rpaymentList.add(new PaymentRecent(R.drawable.airtel, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "2254", "Success"));
+                "88161184648", "Date:  10 jan 2019", "Success", "₹ 2584"));
+        rpaymentList.add(new PaymentRecent(R.drawable.jio, "Electricity Bill",
+                "88161184648", "Date:  21 feb 2019", "Success", "₹ 200"));
+        rpaymentList.add(new PaymentRecent(R.drawable.sun_direct, "Electricity Bill",
+                "88161184648", "Date:  20 aug 2018", "Success", "₹ 4021"));
         rpaymentList.add(new PaymentRecent(R.drawable.airtel, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "2254", "Success"));
-        rpaymentList.add(new PaymentRecent(R.drawable.airtel, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "2254", "Success"));
-        rpaymentList.add(new PaymentRecent(R.drawable.airtel, "Electricity Bill",
-                "88161184648", "Due Date:  21 may 2019", "2254", "Success"));
+                "88161184648", "Date:  10 jan 2019", "Success", "₹ 2584"));
+        rpaymentList.add(new PaymentRecent(R.drawable.jio, "Electricity Bill",
+                "88161184648", "Date:  21 feb 2019", "Success", "₹ 200"));
+        rpaymentList.add(new PaymentRecent(R.drawable.sun_direct, "Electricity Bill",
+                "88161184648", "Date:  20 aug 2018", "Success", "₹ 4021"));
+
+
 
         recyclerView = findViewById(R.id.recyclerView2);
         recyclerView.setHasFixedSize(true);
