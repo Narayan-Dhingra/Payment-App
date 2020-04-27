@@ -12,13 +12,16 @@
         <activity android:name=".ElectricityBill"></activity>
         <activity android:name=".RechargeDTH"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ui.home.Pop"/>
+
+
         <activity
             android:name=".RechargeMobile"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ui.home.Pop"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
