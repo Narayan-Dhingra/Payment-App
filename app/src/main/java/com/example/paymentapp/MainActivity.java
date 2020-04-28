@@ -194,6 +194,24 @@ public class MainActivity extends AppCompatActivity
 
             }
 
+            public void addMoney(View view) {
+
+
+                //handle the tap on add money button
+                Intent intent = new Intent(this, AddMoney.class);
+                startActivity(intent);
+
+            }
+
+            public void payNow(View view) {
+
+
+                //handle the tap on add money button
+                Intent intent = new Intent(this, Success.class);
+                startActivity(intent);
+
+            }
+
 
 
 

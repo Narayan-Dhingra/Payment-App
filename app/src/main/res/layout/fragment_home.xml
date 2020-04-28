@@ -26,6 +26,7 @@
             android:layout_height="41dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/wallet_bg"
             app:srcCompat="@drawable/wallet_icon" />
 
@@ -54,6 +55,7 @@
             android:layout_marginStart="270dp"
             android:layout_marginTop="14dp"
             android:background="@drawable/transparent_btn_bg"
+            android:onClick="addMoney"
             android:text="Add Money"
             android:textColor="@color/colorPrimary"
             android:textSize="14sp" />

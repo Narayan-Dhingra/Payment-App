@@ -9,24 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ElectricityBill"></activity>
-        <activity android:name=".RechargeDTH"
-            android:parentActivityName=".MainActivity"/>
-
-
+        <activity android:name=".Success"
+            android:parentActivityName=".AddMoney"/>
+        <activity
+            android:name=".Recharge"
+            android:parentActivityName=".RechargeMobile" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".AddMoney"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_add_money"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ElectricityBill" />
+        <activity
+            android:name=".RechargeDTH"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RechargeMobile"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ui.home.Pop"
-            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity
+            android:name=".ui.home.Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

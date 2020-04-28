@@ -53,11 +53,13 @@
             android:id="@+id/tvPaynow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pay now"
-            android:textSize="15sp"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="300dp"
-            android:textColor="@color/design_default_color_primary"/>
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:onClick="payNow"
+            android:text="Pay now"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="15sp" />
 
 
 

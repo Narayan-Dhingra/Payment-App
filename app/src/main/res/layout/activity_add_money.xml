@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AddMoney">
+
+
+
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+<!--    <TextView-->
+<!--        android:id="@+id/fullscreen_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:keepScreenOn="true"-->
+<!--        android:text="@string/dummy_content"-->
+<!--        android:textColor="#33b5e5"-->
+<!--        android:textSize="50sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:paddingStart="15dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Money to"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Wallet"
+            android:textSize="22sp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available balance ₹ 6,024"
+            android:layout_marginTop="70dp" />
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="₹ Amount"
+            android:inputType="number"
+            android:textSize="28sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="15dp"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a Promocode?"
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="240dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btnAddMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/primary_button"
+            android:clickable="true"
+            android:onClick="sucess"
+            android:text="Proceed to Add Money"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
